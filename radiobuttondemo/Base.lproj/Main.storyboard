@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="radiobuttondemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEa-Uo-JJe">
+                                <rect key="frame" x="23" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="R4p-XB-9rd"/>
+                                    <constraint firstAttribute="height" constant="32" id="vWx-GN-J6k"/>
+                                </constraints>
+                                <state key="normal" image="check"/>
+                                <connections>
+                                    <action selector="Yes_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUI-Xw-aZ2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rj5-BE-n8I">
+                                <rect key="frame" x="70" y="50" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="4fT-Zx-Nkk"/>
+                                    <constraint firstAttribute="height" constant="21" id="LuL-0W-zlv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48E-B0-SZr">
+                                <rect key="frame" x="194" y="38" width="41" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ei1-bo-ZMf"/>
+                                    <constraint firstAttribute="width" constant="41" id="ktG-or-qx4"/>
+                                </constraints>
+                                <state key="normal" image="uncheck"/>
+                                <connections>
+                                    <action selector="No_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCq-rD-5Bj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw7-VE-BOQ">
+                                <rect key="frame" x="243" y="44" width="103" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="UZQ-kd-e64"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qEa-Uo-JJe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="6ZW-Je-OZZ"/>
+                            <constraint firstItem="aw7-VE-BOQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="75r-jf-Rz6"/>
+                            <constraint firstItem="aw7-VE-BOQ" firstAttribute="leading" secondItem="48E-B0-SZr" secondAttribute="trailing" constant="8" id="BHV-xx-1Fs"/>
+                            <constraint firstItem="rj5-BE-n8I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="WAw-fv-fsz"/>
+                            <constraint firstItem="rj5-BE-n8I" firstAttribute="leading" secondItem="qEa-Uo-JJe" secondAttribute="trailing" constant="15" id="dSz-b2-Fvq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aw7-VE-BOQ" secondAttribute="trailing" constant="29" id="gIj-zn-uY3"/>
+                            <constraint firstItem="qEa-Uo-JJe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="hxU-PT-rmX"/>
+                            <constraint firstItem="48E-B0-SZr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="jtv-hL-DQb"/>
+                            <constraint firstItem="48E-B0-SZr" firstAttribute="leading" secondItem="rj5-BE-n8I" secondAttribute="trailing" constant="25" id="m29-16-Bt8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="no" destination="48E-B0-SZr" id="tpA-ss-ePw"/>
+                        <outlet property="yes" destination="qEa-Uo-JJe" id="3Ce-jL-a8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check" width="32" height="32"/>
+        <image name="uncheck" width="50" height="50"/>
+    </resources>
+</document>
